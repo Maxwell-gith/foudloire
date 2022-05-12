@@ -1,1 +1,18 @@
-@import "./Base/typography", "./Base/reset";
+@import "./Utils/variables";
+@import "./Base/reset", "./Base/typography";
+
+// -----------NAVBAR-----------------
+.navbar{
+    background-color: $primaryColor;
+    display: flex;
+    padding: 5px;
+}
+
+.navbar__logo{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar__links {
+    
+}

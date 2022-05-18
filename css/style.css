@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea, select {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 .navbar {
@@ -198,14 +198,28 @@ h2 {
 }
 
 .idea__title {
-  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: #171219;
 }
 
 .menu {
-  padding: 20px;
+  padding: 20px 0 20px 0;
   background-color: #E1C297;
+}
+
+.menu__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #171219;
+}
+
+.menu__container {
+  max-width: 100%;
+}
+
+.menu__slider > img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

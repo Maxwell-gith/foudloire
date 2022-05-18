@@ -5,7 +5,10 @@
 .navbar{
     background-color: $primaryColor;
     display: flex;
-    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 95px;
 }
 
 .navbar__logo{
@@ -14,5 +17,119 @@
 }
 
 .navbar__links {
-    
+    width: 0;
+    height: 100vh;
+    position: absolute;
+    top: 105px;
+    right: 0;
+    background-color: $primaryColor;
+    transition: all 0.5s ease-in-out;
+}
+
+    // Utile au moment du click sur le bouton burger
+.show-navbar .navbar__links {
+    width: 100%;
+}
+
+.navbar__link{
+    transform: translateX(101%); 
+}
+
+.show-navbar .navbar__link{
+    transform: translateX(0); 
+}
+
+.navbar__link > a {
+    display: block;
+    padding: 20px;
+}
+
+    // Tout le style du bouton burger
+.navbar__burger{
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &-line{
+        display: block;
+        width: 45px;
+        height: 4px;
+        background: $secondaryColor;
+        border-radius: 3px;
+        transition: all 0.4s ease-in-out;
+    }
+    &-line::before, &-line::after{
+        content:'';
+        position: absolute;
+        left: 0;
+        width: 45px;
+        height: 4px;
+        background: $secondaryColor;
+        border-radius: 3px;
+        transition: all 0.5s ease-in-out;
+    }
+    &-line::before {
+        transform: translateY(-12px);
+    }
+    &-line::after {
+        transform: translateY(12px);
+    }
+}
+
+    // Animation au moment du click sur le bouton burger
+.show-navbar .navbar__burger-line {
+    width: 0;
+    background: transparent;
+}
+
+.show-navbar .navbar__burger-line::before {
+    transform: rotate(45deg);
+}
+
+.show-navbar .navbar__burger-line::after {
+    transform: rotate(-45deg);
+}
+
+.show-navbar .delay1 {
+    transition: all 1s ease-out;
+}
+
+.show-navbar .delay2 {
+    transition: all 1.1s ease-out;
+}
+
+.show-navbar .delay3 {
+    transition: all 1.2s ease-out;
+}
+
+.show-navbar .delay4 {
+    transition: all 1.3s ease-out;
+}
+
+// -----------IDEA-----------------
+.idea{
+    padding: 20px;
+}
+
+.idea__img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.idea__title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: $fontColor;
+}
+
+// -----------IDEA-----------------
+.menu{
+    padding: 20px;
+    background-color: $primaryColor;
 }

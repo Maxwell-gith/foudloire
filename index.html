@@ -51,8 +51,12 @@
       <section class="menu">
         <div class="menu__container">
           <div class="menu__slider">
-            <img src="img/fdl_menu1.jpg" id="menu" alt="1ere page du menu">
-            <img src="img/fdl_menu2.jpg" alt="2eme page du menu">
+            <img class="slide active" src="img/fdl_menu1.jpg" alt="1ere page du menu">
+            <img class="slide" src="img/fdl_menu2.jpg" alt="2eme page du menu">
+            <div class="container__button">
+              <button class="prev" id="menu"><i class="fa-solid fa-arrow-left-from-line"></i></button>
+              <button class="next"><i class="fa-solid fa-arrow-right-from-line"></i></button>
+            </div>
           </div>
         </div>
       </section>
@@ -77,5 +81,6 @@
     <!--=========================== FOOTER ===========================-->
     <footer></footer>
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/3101cab6aa.js" crossorigin="anonymous"></script>
   </body>
 </html>

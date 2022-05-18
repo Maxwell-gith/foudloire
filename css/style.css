@@ -1,3 +1,21 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -88,10 +106,12 @@ h2 {
   background-color: #E1C297;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  overflow: hidden;
 }
 
 .show-navbar .navbar__links {
   width: 100%;
+  overflow: visible;
 }
 
 .navbar__link {
@@ -216,10 +236,44 @@ h2 {
 
 .menu__container {
   max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .menu__slider > img {
   width: 100%;
   height: auto;
+  display: none;
+  position: relative;
+}
+
+.menu__slider > img.active {
+  display: block;
+  -webkit-animation: fadeIn 1s ease-in-out;
+          animation: fadeIn 1s ease-in-out;
+}
+
+.container__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.next, .prev {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
 }
 /*# sourceMappingURL=style.css.map */

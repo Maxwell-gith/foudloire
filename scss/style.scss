@@ -1,4 +1,4 @@
-@import "./Utils/variables";
+@import "./Utils/variables", "./Utils/animations";
 @import "./Base/reset", "./Base/typography";
 
 // -----------NAVBAR-----------------
@@ -24,18 +24,20 @@
     right: 0;
     background-color: $primaryColor;
     transition: all 0.5s ease-in-out;
+    overflow: hidden;
 }
 
     // Utile au moment du click sur le bouton burger
 .show-navbar .navbar__links {
     width: 100%;
+    overflow: visible;
 }
 
 .navbar__link{
     transform: translateX(101%); 
 }
 
-.show-navbar .navbar__link{
+.show-navbar .navbar__link  {
     transform: translateX(0); 
 }
 
@@ -141,9 +143,36 @@
 
 .menu__container {
     max-width: 100%;
+    display: flex;
 }
 
 .menu__slider > img {
     width: 100%;
     height: auto;
+    display: none;
+    position: relative;
 }
+
+.menu__slider > img.active {
+    display: block;
+    animation : fadeIn 1s ease-in-out;
+}
+
+.container__button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.next, .prev {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+
+

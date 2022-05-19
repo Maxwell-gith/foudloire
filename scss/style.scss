@@ -132,6 +132,7 @@
 .menu{
     padding: 20px 0 20px 0; 
     background-color: $primaryColor;
+    display: block;
 }
 
 .menu__title{
@@ -140,38 +141,108 @@
     color: $fontColor;
 }
 
-.menu__container {
+.menu__slider {
     max-width: 100%;
-    display: flex;
 }
 
 .menu__slider > img {
     width: 100%;
+    height: auto;  
+}
+
+// -----------US-----------------
+.us {
+    padding: 20px;
+}
+
+.us__img{
+    width: 100%;
     height: auto;
-    display: none;
-    position: relative;
+    margin-bottom: 20px;
 }
 
-.menu__slider > img.active {
+.us__title{
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: $fontColor;
+}
+
+// -----------CONTACT-----------------
+
+.contact {
+    padding: 20px;
+}
+
+.contact__img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.contact__title{
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: $fontColor;
+}
+
+.maps__button{
     display: block;
-    animation : fadeIn 1s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: $tertiaryColor;
+    color: white;
+    text-align: center;
+    border: 1px solid $tertiaryColor;
+    border-radius: 5px;
+    width: 50%;
 }
 
-.container__button{
+.contact__smallTitle{
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: $fontColor;
+}
+
+.contact__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact__fb, .contact__insta {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    background-color: $tertiaryColor;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+//----------FOOTER-----------------
+
+.footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: $primaryColor;
+    padding: 20px;
+    color: $fontColor;
 }
-.next, .prev {
+
+.footer > p{
+    font-size: 1.2rem;
+}
+
+.footer__link{
+    color: $fontColor;
     cursor: pointer;
-    position: absolute;
-    z-index: 1;
-    width: 32px;
-    height: 32px;
-    color: white;
-    font-weight: bold;
-    font-size: 32px;
+    font-size: 1.2rem;
 }
+
 
 
 

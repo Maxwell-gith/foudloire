@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet" />
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,38 +49,44 @@
 
       <!--=========================== CARTE ===========================-->
       <section class="menu">
-        <div class="menu__container">
           <div class="menu__slider">
-            <img class="slide active" src="img/fdl_menu1.jpg" alt="1ere page du menu">
-            <img class="slide" src="img/fdl_menu2.jpg" alt="2eme page du menu">
-            <div class="container__button">
-              <button class="prev" id="menu"><i class="fa-solid fa-arrow-left-from-line"></i></button>
-              <button class="next"><i class="fa-solid fa-arrow-right-from-line"></i></button>
-            </div>
+            <img src="img/fdl_menu1.jpg" alt="1ere page du menu">
+            <img src="img/fdl_menu2.jpg" alt="2eme page du menu">
           </div>
-        </div>
       </section>
 
       <!--=========================== QUI SOMMES NOUS ===========================-->
-      <section id="us">
-        <header></header>
-
-        <div></div>
+      <section class="us" id="us">
+        <img class="us__img" src="img/fdl_team.avif" alt="us" />
+        <h2 class="us__title">C'est nous !</h2>
+        <p class="us__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quisquam odit mollitia eum quibusdam earum quam nulla est quia minus aut, placeat amet consequatur ut dolor, dolorum in voluptate. Quo.</p>
       </section>
 
       <!--=========================== CONTACTS ===========================-->
-      <section id="contact">
-        <header></header>
-
-        <div></div>
+      <section class="contact" id="contact">
+        <img class="contact__img" src="img/logo.png" alt="contact" />
+        <h2 class="contact__title">Nos contacts</h2>
+        <p class="contact__text">22 promenade de Trouillas <br>41150 Chaumont-sur-Loire</p>
+        <a class="maps__button" href="https://goo.gl/maps/Cv7nX3jYwRd73n4PA">Ouvrir une carte</a>
+        <h3 class="contact__smallTitle">Suivez-nous sur les réseaux</h3>
+        <div class="contact__container">
+          <a href="https://www.facebook.com/Fou-dLoire-109199948421573" class="contact__fb">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/fou_dloire/" class="contact__insta">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
       </section>
 
     </main>
 
-
     <!--=========================== FOOTER ===========================-->
-    <footer></footer>
+    <footer class="footer">
+      <p>👨‍💻 Site crée par <a class="footer__link" href="https://github.com/Maxwell-gith" target="_blank">Maxime Héry</a></p>
+      <a href="" class="footer__link">📚 Mentions légales</a>
+    </footer>
     <script src="js/script.js"></script>
-    <script src="https://kit.fontawesome.com/3101cab6aa.js" crossorigin="anonymous"></script>
+    
   </body>
 </html>

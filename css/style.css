@@ -225,6 +225,7 @@ h2 {
 .menu {
   padding: 20px 0 20px 0;
   background-color: #E1C297;
+  display: block;
 }
 
 .menu__title {
@@ -233,27 +234,96 @@ h2 {
   color: #171219;
 }
 
-.menu__container {
+.menu__slider {
   max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .menu__slider > img {
   width: 100%;
   height: auto;
-  display: none;
-  position: relative;
 }
 
-.menu__slider > img.active {
+.us {
+  padding: 20px;
+}
+
+.us__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.us__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #171219;
+}
+
+.contact {
+  padding: 20px;
+}
+
+.contact__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.contact__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #171219;
+}
+
+.maps__button {
   display: block;
-  -webkit-animation: fadeIn 1s ease-in-out;
-          animation: fadeIn 1s ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #419d78;
+  color: white;
+  text-align: center;
+  border: 1px solid #419d78;
+  border-radius: 5px;
+  width: 50%;
 }
 
-.container__button {
+.contact__smallTitle {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #171219;
+}
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__fb, .contact__insta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  background-color: #419d78;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,16 +333,18 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #E1C297;
+  padding: 20px;
+  color: #171219;
 }
 
-.next, .prev {
+.footer > p {
+  font-size: 1.2rem;
+}
+
+.footer__link {
+  color: #171219;
   cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  width: 32px;
-  height: 32px;
-  color: white;
-  font-weight: bold;
-  font-size: 32px;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */

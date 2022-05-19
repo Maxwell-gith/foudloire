@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Fou d'Loire</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet" />
     <!-- Fonts -->
@@ -22,10 +23,10 @@
       <nav class="navbar" role="navigation">
         <img class="navbar__logo" src="img/logo.png" alt="logo" />
         <ul class="navbar__links">
-          <li class="navbar__link delay1"><a href="#idea">🍻 Le concept</a></li>
-          <li class="navbar__link delay2"><a href="#menu">🍻 La carte</a></li>
-          <li class="navbar__link delay3"><a href="#us">🍻 Qui sommes-nous</a></li>
-          <li class="navbar__link delay4"><a href="#contact">🍻 Nos contacts</a></li>
+          <li class="navbar__link delay1"><a href="#idea">Le concept</a></li>
+          <li class="navbar__link delay2"><a href="#menu">La carte</a></li>
+          <li class="navbar__link delay3"><a href="#us">Qui sommes-nous</a></li>
+          <li class="navbar__link delay4"><a href="#contact">Nos contacts</a></li>
         </ul>
         <button class="navbar__burger">
           <span class="navbar__burger-line"></span>
@@ -34,48 +35,62 @@
     </header>
 
     <!--=========================== MAIN CONTAINER ===========================-->
-    <main>
+    <main class="main__container">
 
-      <!--=========================== CONCEPT ===========================-->
+      <!--=========================== IDEA ===========================-->
       <section class="idea" id="idea">
-        <img class="idea__img" src="img/fdl_photo_terrasse.jpg" alt="idea" />
-        <h2 class="idea__title">Bienvenue chez nous!</h2>
-        <p class="idea__text">
-          Notre restaurant est situé dans le quartier de la place de la République, à quelques minutes du centre-ville.
-          Nous vous proposons des plats typiques de la région, avec des produits frais et de qualité.
-          Nous vous proposons également des plats typiques de la région, avec des produits frais et de qualité.
-        </p>
+        <figure class="idea__container">
+          <img class="idea__img" src="img/fdl_photo_terrasse.jpg" alt="idea" />
+          <figcaption class="idea__content">
+            <h2 class="idea__title">Bienvenue chez nous!</h2>
+            <p class="idea__text">
+              Notre restaurant est situé dans le quartier de la place de la République, à quelques minutes du centre-ville.
+              Nous vous proposons des plats typiques de la région, avec des produits frais et de qualité.
+              Nous vous proposons également des plats typiques de la région, avec des produits frais et de qualité.
+            </p>
+          </figcaption>
+        </figure>
       </section>
 
-      <!--=========================== CARTE ===========================-->
+      <!--=========================== MENU ===========================-->
       <section class="menu">
           <div class="menu__slider">
-            <img src="img/fdl_menu1.jpg" alt="1ere page du menu">
+            <img id="menu" src="img/fdl_menu1.jpg" alt="1ere page du menu">
             <img src="img/fdl_menu2.jpg" alt="2eme page du menu">
           </div>
       </section>
 
       <!--=========================== QUI SOMMES NOUS ===========================-->
       <section class="us" id="us">
-        <img class="us__img" src="img/fdl_team.avif" alt="us" />
-        <h2 class="us__title">C'est nous !</h2>
-        <p class="us__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quisquam odit mollitia eum quibusdam earum quam nulla est quia minus aut, placeat amet consequatur ut dolor, dolorum in voluptate. Quo.</p>
+        <figure class="us__container">
+          <img class="us__img" src="img/fdl_team.avif" alt="us" />
+          <figcaption class="us__content">
+            <h2 class="us__title">C'est nous !</h2>
+            <p class="us__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quisquam odit mollitia eum quibusdam earum quam nulla est quia minus aut, placeat amet consequatur ut dolor, dolorum in voluptate. Quo.</p>
+          </figcaption>
+        </figure>
       </section>
 
       <!--=========================== CONTACTS ===========================-->
       <section class="contact" id="contact">
-        <img class="contact__img" src="img/logo.png" alt="contact" />
-        <h2 class="contact__title">Nos contacts</h2>
-        <p class="contact__text">22 promenade de Trouillas <br>41150 Chaumont-sur-Loire</p>
-        <a class="maps__button" href="https://goo.gl/maps/Cv7nX3jYwRd73n4PA">Ouvrir une carte</a>
-        <h3 class="contact__smallTitle">Suivez-nous sur les réseaux</h3>
-        <div class="contact__container">
-          <a href="https://www.facebook.com/Fou-dLoire-109199948421573" class="contact__fb">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="https://www.instagram.com/fou_dloire/" class="contact__insta">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+        <figure class="contact__container">
+          <img class="contact__img" src="img/logo.png" alt="contact" />
+          <figcaption class="contact__content">
+            <h2 class="contact__title">Nos contacts</h2>
+            <p class="contact__text">22 promenade de Trouillas <br>41150 Chaumont-sur-Loire</p>
+            <a class="maps__button" href="https://goo.gl/maps/Cv7nX3jYwRd73n4PA">Ouvrir une carte</a>
+          </figcaption>
+        </figure>
+        <div class="socialmedia__container">
+          <h3 class="contact__smallTitle">Suivez-nous sur les réseaux</h3>
+          <div class="contact__links">
+            <a href="https://www.facebook.com/Fou-dLoire-109199948421573" class="contact__fb">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/fou_dloire/" class="contact__insta">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
         </div>
       </section>
 

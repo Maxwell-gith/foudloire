@@ -9,6 +9,7 @@
     align-items: center;
     padding: 10px;
     height: 95px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .navbar__logo{
@@ -27,6 +28,13 @@
     overflow: hidden;
 }
 
+.navbar__link > a {
+    display: block;
+    padding: 20px;
+    color: $secondaryColor;
+    font-weight: 700;
+}
+
     // Utile au moment du click sur le bouton burger
 .show-navbar .navbar__links {
     width: 100%;
@@ -40,10 +48,6 @@
     transform: translateX(0); 
 }
 
-.navbar__link > a {
-    display: block;
-    padding: 20px;
-}
 
     // Tout le style du bouton burger
 .navbar__burger{
@@ -112,7 +116,7 @@
 }
 
     //-------------------NAVBAR MEDIA QUERIES-------------------
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1250px) {
     .navbar__burger {
         display: none;
     }
@@ -156,28 +160,26 @@
 }
 
     //-------------------IDEA MEDIA QUERIES-------------------
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1250px) {
         .idea__container{
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 80%;
-            height: 100vh;
             margin: 0 auto;
         }
         .idea__img {
-            width: 45%;
+            width: 55%;
 
         }
         .idea__content {
-            width: 45%;
+            width: 35%;
         }
     }
 
 // -----------MENU-----------------
 .menu{
     padding: 80px 0 80px 0; 
-    background-color: #dcc58f;
     display: block;
 }
 
@@ -197,13 +199,12 @@
 }
 
     //-------------------MENU MEDIA QUERIES-------------------
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1250px) {
         .menu__slider {
             display: flex;
             justify-content: space-around;
             align-items: center;
             width: 80%;
-            height: 100vh;
             margin: 0 auto;
         }
         .menu__slider > img {
@@ -215,6 +216,7 @@
 // -----------US-----------------
 .us {
     padding: 80px 20px 80px 20px;
+    background-color: #dcc58f;
 }
 
 .us__img{
@@ -230,14 +232,13 @@
 }
 
     //-------------------US MEDIA QUERIES-------------------
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1250px) {
         .us__container{
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-direction: row-reverse;
             width: 80%;
-            height: 100vh;
             margin: 0 auto;
         }
         .us__img {
@@ -253,7 +254,6 @@
 
 .contact {
     padding: 80px 20px 80px 20px;
-    background-color: $primaryColor;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,6 +266,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 400px;
 }
 .contact__img{
     width: 50%;
@@ -321,9 +322,9 @@
 }
 
     //-------------------CONTACT MEDIA QUERIES-------------------
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1250px) {
         .contact{
-            height: 82vh;
+            // height: 82vh;
             display: flex;
             justify-content: space-around;
             flex-direction: column;
@@ -369,6 +370,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: #dcc58f;
     color: $fontColor;
 }
 
@@ -383,7 +385,7 @@
 }
 
     //-------------------FOOTER MEDIA QUERIES-------------------
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1250px) {
         .footer{
             justify-content: space-around;
         }

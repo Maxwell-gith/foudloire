@@ -1,6 +1,10 @@
 @import "./Utils/variables", "./Utils/animations";
 @import "./Base/reset", "./Base/typography";
 
+// Glidejs
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 // -----------NAVBAR-----------------
 .navbar{
     background-color: $primaryColor;
@@ -21,6 +25,7 @@
     width: 0;
     height: 100vh;
     position: absolute;
+    z-index: 1;
     top: 105px;
     right: 0;
     background-color: $primaryColor;
@@ -116,7 +121,7 @@
 }
 
     //-------------------NAVBAR MEDIA QUERIES-------------------
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 850px) {
     .navbar__burger {
         display: none;
     }
@@ -147,6 +152,10 @@
     padding: 80px 20px 80px 20px;
 }
 
+.glide {
+    overflow: hidden;
+}
+
 .idea__img{
     width: 100%;
     height: auto;
@@ -160,7 +169,7 @@
 }
 
     //-------------------IDEA MEDIA QUERIES-------------------
-    @media screen and (min-width: 1250px) {
+    @media screen and (min-width: 850px) {
         .idea__container{
             display: flex;
             justify-content: space-between;
@@ -168,9 +177,26 @@
             width: 80%;
             margin: 0 auto;
         }
-        .idea__img {
-            width: 55%;
 
+        .glide {
+            width: 55% !important;
+            display: flex;
+        }
+
+        .glide__bullet {
+            width: 10px !important;
+            height: 10px !important;
+            border-radius: 50%;
+            margin-bottom: 5px !important;
+        }
+
+        .glide
+
+        .idea__img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            object-fit: cover;
         }
         .idea__content {
             width: 35%;
@@ -199,7 +225,7 @@
 }
 
     //-------------------MENU MEDIA QUERIES-------------------
-    @media screen and (min-width: 1250px) {
+    @media screen and (min-width: 850px) {
         .menu__slider {
             display: flex;
             justify-content: space-around;
@@ -232,7 +258,7 @@
 }
 
     //-------------------US MEDIA QUERIES-------------------
-    @media screen and (min-width: 1250px) {
+    @media screen and (min-width: 850px) {
         .us__container{
             display: flex;
             justify-content: space-between;
@@ -266,7 +292,6 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 400px;
 }
 .contact__img{
     width: 50%;
@@ -322,7 +347,7 @@
 }
 
     //-------------------CONTACT MEDIA QUERIES-------------------
-    @media screen and (min-width: 1250px) {
+    @media screen and (min-width: 850px) {
         .contact{
             // height: 82vh;
             display: flex;
@@ -351,6 +376,7 @@
             justify-content: center;
             width: 80%;
             margin: 0 auto;
+            padding-top: 40px;
         }
         .contact__smallTitle {
             width: 25%;
@@ -385,7 +411,7 @@
 }
 
     //-------------------FOOTER MEDIA QUERIES-------------------
-    @media screen and (min-width: 1250px) {
+    @media screen and (min-width: 850px) {
         .footer{
             justify-content: space-around;
         }

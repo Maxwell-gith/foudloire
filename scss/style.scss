@@ -156,6 +156,13 @@
     overflow: hidden;
 }
 
+.glide__bullet {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    margin-bottom: 5px !important;
+}
+
 .idea__img{
     width: 100%;
     height: auto;
@@ -182,15 +189,6 @@
             width: 55% !important;
             display: flex;
         }
-
-        .glide__bullet {
-            width: 10px !important;
-            height: 10px !important;
-            border-radius: 50%;
-            margin-bottom: 5px !important;
-        }
-
-        .glide
 
         .idea__img{
             width: 100%;

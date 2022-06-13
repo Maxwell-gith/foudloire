@@ -157,10 +157,7 @@
 }
 
 .glide__bullet {
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50%;
-    margin-bottom: 5px !important;
+    display: none;
 }
 
 .idea__img{
@@ -188,6 +185,14 @@
         .glide {
             width: 55% !important;
             display: flex;
+        }
+
+        .glide__bullet {
+            display: block;
+            width: 10px !important;
+            height: 10px !important;
+            border-radius: 50%;
+            margin-bottom: 5px !important;
         }
 
         .idea__img{

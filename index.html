@@ -124,6 +124,7 @@
 
     <!-- Glidejs -->
     <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    
     <script>
       const config = {
         type: 'carousel',
@@ -131,6 +132,20 @@
         gap: 0,
         animationDuration: 500,
         animationTimingFunc: 'ease-in',
+        breakpoints: {
+          320: {
+            perView: 1,
+            gap: 0
+          },
+          768: {
+            perView: 1,
+            gap: 0
+          },
+          1024: {
+            perView: 1,
+            gap: 0
+          }
+        }
       }
       new Glide('.glide', config).mount()
     </script>

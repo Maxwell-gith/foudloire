@@ -436,8 +436,15 @@ h2 {
   overflow: hidden;
 }
 
-.glide__bullet {
+.glide__arrows {
   display: none;
+}
+
+.glide__bullet {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  margin-bottom: 15px !important;
 }
 
 .idea__img {
@@ -463,7 +470,7 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   .glide {
@@ -471,13 +478,6 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .glide__bullet {
-    display: block;
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50%;
-    margin-bottom: 5px !important;
   }
   .idea__img {
     width: 100%;
@@ -521,7 +521,7 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   .menu__slider > img {
@@ -562,7 +562,7 @@ h2 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   .us__img {
@@ -697,7 +697,7 @@ h2 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   .contact__img {

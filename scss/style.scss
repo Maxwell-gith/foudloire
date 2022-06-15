@@ -2,8 +2,8 @@
 @import "./Base/reset", "./Base/typography";
 
 // Glidejs
-// @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
-// @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
 // -----------NAVBAR-----------------
 .navbar{

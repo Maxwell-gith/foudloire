@@ -432,18 +432,9 @@ h2 {
   padding: 80px 20px 80px 20px;
 }
 
-.glide {
-  overflow: hidden;
-}
-
-.glide__arrows {
-  display: none;
-}
-
 .glide__bullet {
   width: 10px !important;
   height: 10px !important;
-  border-radius: 50%;
   margin-bottom: 15px !important;
 }
 
@@ -473,11 +464,8 @@ h2 {
     width: 90%;
     margin: 0 auto;
   }
-  .glide {
+  .idea__container > .glide {
     width: 55% !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .idea__img {
     width: 100%;
@@ -493,40 +481,80 @@ h2 {
 
 .menu {
   padding: 80px 0 80px 0;
-  display: block;
+}
+
+.menu__containerTitle {
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu__title {
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #171219;
+  font-size: 2.5rem;
+  color: #755528;
 }
 
-.menu__slider {
+.drinks__img--isOpen {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.food__img--isOpen {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu__title--isActive {
+  text-decoration: underline;
+}
+
+.menu__containerImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
+  overflow: hidden;
 }
 
-.menu__slider > img {
+.menu__img {
   width: 100%;
   height: auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 850px) {
-  .menu__slider {
+  .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 90%;
-    margin: 0 auto;
   }
-  .menu__slider > img {
+  .menu__containerTitle {
+    display: none;
+  }
+  .menu__containerImg {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 90%;
+  }
+  .menu__img {
     width: 45%;
     height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 

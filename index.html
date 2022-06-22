@@ -51,10 +51,6 @@
                 <li class="glide__slide"><img class="idea__img" src="img/fdl_team.avif" alt="idea" /></li>
               </ul>
             </div>
-            <div class="glide__arrows" data-glide-el="controls">
-              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-            </div>
             <div class="glide__bullets" data-glide-el="controls[nav]">
               <button class="glide__bullet" data-glide-dir="=0"></button>
               <button class="glide__bullet" data-glide-dir="=1"></button>
@@ -76,10 +72,14 @@
 
       <!--=========================== MENU ===========================-->
       <section class="menu">
-          <div class="menu__slider">
-            <img id="menu" src="img/fdl_menu1.jpg" alt="1ere page du menu">
-            <img src="img/fdl_menu2.jpg" alt="2eme page du menu">
-          </div>
+        <div class="menu__containerTitle">
+          <h2 class="menu__title food__btn menu__title--isActive">La carte des plats</h2>
+          <h2 class="menu__title drinks__btn">La carte des boissons</h2>
+        </div>
+        <div class="menu__containerImg">
+          <img class="menu__img food__img" id="menu" src="img/fdl_menu1.jpg" alt="1ere page du menu">
+          <img class="menu__img drinks__img" src="img/fdl_menu2.jpg" alt="2eme page du menu">
+        </div>
       </section>
 
       <!--=========================== QUI SOMMES NOUS ===========================-->
@@ -122,6 +122,7 @@
     <footer class="footer">
       <p>👨‍💻 Site crée par <a class="footer__link" href="https://github.com/Maxwell-gith" target="_blank">Maxime Héry</a></p>
       <a href="" class="footer__link">📚 Mentions légales</a>
+      <a href="https://www.iubenda.com/privacy-policy/51427334" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Politique de confidentialité ">Politique de confidentialité</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
     </footer>
 
     <script src="js\script.js"></script>
@@ -136,7 +137,24 @@
         animationDuration: 500,
         animationTimingFunc: 'ease-in',
       }
+      const configMenu = {
+        type: 'slider',
+            perView: 1,
+            gap: 10,
+            animationDuration: 500,
+            animationTimingFunc: 'ease-in',
+        breakpoints: {
+          850: {
+            type: 'slider',
+            perView: 1,
+            gap: 10,
+            animationDuration: 500,
+            animationTimingFunc: 'ease-in',
+          }
+        }
+      }
       new Glide('.glide', config).mount()
+      new Glide('.glide__menu', configMenu).mount()
     </script>
     
   </body>

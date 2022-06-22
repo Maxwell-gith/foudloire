@@ -152,18 +152,13 @@
     padding: 80px 20px 80px 20px;
 }
 
-.glide {
-    overflow: hidden;
-}
-
-.glide__arrows {
-    display: none;
-}
+// .idea__container > .glide {
+//     overflow: hidden;
+// }
 
 .glide__bullet {
     width: 10px !important;
     height: 10px !important;
-    border-radius: 50%;
     margin-bottom: 15px !important;
 }
 
@@ -189,9 +184,8 @@
             margin: 0 auto;
         }
 
-        .glide {
+        .idea__container > .glide {
             width: 55% !important;
-            display: flex;
         }
 
         .idea__img{
@@ -200,6 +194,7 @@
             margin-bottom: 20px;
             object-fit: cover;
         }
+
         .idea__content {
             width: 35%;
         }
@@ -207,37 +202,67 @@
 
 // -----------MENU-----------------
 .menu{
-    padding: 80px 0 80px 0; 
-    display: block;
+    padding: 80px 0 80px 0;
 }
 
-.menu__title{
+.menu__containerTitle{
     font-weight: bold;
     margin-bottom: 20px;
-    color: $fontColor;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.menu__slider {
-    width: 100%;
+.menu__title {
+    font-size: 2.5rem;
+    color: $secondaryColor;
 }
 
-.menu__slider > img {
+.drinks__img--isOpen {
+    transform: translateX(-100%);
+}
+
+.food__img--isOpen {
+    transform: translateX(0);
+}
+
+.menu__title--isActive {
+    text-decoration: underline;
+}
+
+.menu__containerImg {
+    display: flex;
     width: 100%;
-    height: auto;  
+    overflow: hidden;
+}
+
+.menu__img{
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in-out;
 }
 
     //-------------------MENU MEDIA QUERIES-------------------
     @media screen and (min-width: 850px) {
-        .menu__slider {
+        .menu {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            width: 90%;
-            margin: 0 auto;
         }
-        .menu__slider > img {
+
+        .menu__containerTitle {
+            display: none;
+        }
+
+        .menu__containerImg {
+            justify-content: space-around;
+            width: 90%;
+        }
+
+        .menu__img{
             width: 45%;
             height: auto;
+            object-fit: contain;
         }
     }
 

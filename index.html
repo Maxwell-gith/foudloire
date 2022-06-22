@@ -137,24 +137,7 @@
         animationDuration: 500,
         animationTimingFunc: 'ease-in',
       }
-      const configMenu = {
-        type: 'slider',
-            perView: 1,
-            gap: 10,
-            animationDuration: 500,
-            animationTimingFunc: 'ease-in',
-        breakpoints: {
-          850: {
-            type: 'slider',
-            perView: 1,
-            gap: 10,
-            animationDuration: 500,
-            animationTimingFunc: 'ease-in',
-          }
-        }
-      }
       new Glide('.glide', config).mount()
-      new Glide('.glide__menu', configMenu).mount()
     </script>
     
   </body>

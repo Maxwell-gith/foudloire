@@ -57,24 +57,24 @@
               <button class="glide__bullet" data-glide-dir="=2"></button>
             </div>
           </div>
-          
-          <figcaption class="idea__content">
-            <h2 class="idea__title">Bienvenue chez nous!</h2>
-            <p class="idea__text">
-              Situé à Chaumont-sur-Loire en bord de Loire avec un cadre convivial et un accueil chaleureux, Fou d'Loire est le lieu parfait pour faire une pause rafraichissante ou gourmande.<br> 
-              Ce restaurant est une histoire de famille!<br>
-              Venez découvrir notre cuisine composé de produits locaux.<br>
-              Retrouvez notre carte juste en dessous 👇
-            </p>
-          </figcaption>
-        </figure>
-      </section>
+        
+        <figcaption class="idea__content">
+          <h2 class="idea__title">Bienvenue chez nous!</h2>
+          <p class="idea__text">
+            Situé à Chaumont-sur-Loire en bord de Loire avec un cadre convivial et un accueil chaleureux, Fou d'Loire est le lieu parfait pour faire une pause rafraichissante ou gourmande.<br> 
+            Ce restaurant est une histoire de famille!<br>
+            Venez découvrir notre cuisine composé de produits locaux.<br>
+            Retrouvez notre carte juste en dessous 👇
+          </p>
+        </figcaption>
+      </figure>
+    </section>
 
       <!--=========================== MENU ===========================-->
       <section class="menu">
         <div class="menu__containerTitle">
-          <h2 class="menu__title food__btn menu__title--isActive">La carte des plats</h2>
-          <h2 class="menu__title drinks__btn">La carte des boissons</h2>
+          <h2 class="menu__title food__btn menu__title--isActive">Les plats</h2>
+          <h2 class="menu__title drinks__btn">Les boissons</h2>
         </div>
         <div class="menu__containerImg">
           <img class="menu__img food__img" id="menu" src="img/fdl_menu1.jpg" alt="1ere page du menu">
@@ -136,6 +136,7 @@
         gap: 0,
         animationDuration: 500,
         animationTimingFunc: 'ease-in',
+        autoplay : 5000,
       }
       new Glide('.glide', config).mount()
     </script>

@@ -6,3 +6,20 @@
     opacity: 1;
   }
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 90%;
+  }
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 90%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 90%;
+  }
+}

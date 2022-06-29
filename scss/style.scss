@@ -149,12 +149,9 @@
 
 // -----------IDEA-----------------
 .idea{
-    padding: 80px 20px 80px 20px;
+    padding: 40px 20px 40px 20px;
+    animation: fadeIn 1.5s ease-in-out;
 }
-
-// .idea__container > .glide {
-//     overflow: hidden;
-// }
 
 .glide__bullet {
     width: 10px !important;
@@ -202,7 +199,7 @@
 
 // -----------MENU-----------------
 .menu{
-    padding: 80px 0 80px 0;
+    padding: 40px 0 80px 0;
 }
 
 .menu__containerTitle{

@@ -48,6 +48,60 @@
   }
 }
 
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+  33.32%, 45.98% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  49.98%, 62.64% {
+    -webkit-transform: translate3d(0, -75%, 0);
+            transform: translate3d(0, -75%, 0);
+  }
+  66.64%, 79.3% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  83.3%, 95.96% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+  33.32%, 45.98% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  49.98%, 62.64% {
+    -webkit-transform: translate3d(0, -75%, 0);
+            transform: translate3d(0, -75%, 0);
+  }
+  66.64%, 79.3% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  83.3%, 95.96% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -441,7 +495,7 @@ h1 {
     display: none;
   }
   .navbar__links {
-    width: 65%;
+    width: 80%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -493,7 +547,7 @@ h1 {
 .idea__title {
   font-weight: bold;
   margin-bottom: 20px;
-  color: #171219;
+  color: #130303;
 }
 
 .idea__2title {
@@ -502,6 +556,30 @@ h1 {
   margin-bottom: 20px;
   color: #419d78;
   font-family: 'Archivo Narrow', sans-serif;
+}
+
+.idea__container_hastags {
+  overflow: hidden;
+  height: 80px;
+  padding: 0;
+}
+
+.idea__container__list {
+  margin-top: 0;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  overflow: hidden;
+}
+
+.idea__container__list__items {
+  line-height: 40px;
+  margin: 0;
 }
 
 @media screen and (min-width: 850px) {
@@ -550,6 +628,9 @@ h1 {
 .menu__title {
   font-size: 2.5rem;
   color: #755528;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
 }
 
 .drinks__img--isOpen {
@@ -691,6 +772,7 @@ h1 {
   width: 50%;
   height: auto;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .contact__title {
@@ -700,7 +782,7 @@ h1 {
 }
 
 .contact__text {
-  margin-bottom: 20px;
+  margin: 20px 0px 20px 0px;
 }
 
 .maps__button {
@@ -710,9 +792,12 @@ h1 {
   background-color: #419d78;
   color: white;
   text-align: center;
-  border: 1px solid #419d78;
   border-radius: 5px;
   width: 50%;
+}
+
+.maps__frame {
+  display: none;
 }
 
 .contact__smallTitle {
@@ -767,8 +852,9 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -780,10 +866,34 @@ h1 {
     margin: 0 auto;
   }
   .contact__img {
-    width: 25%;
+    width: 44%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__img > img {
+    display: block;
+    width: 100%;
   }
   .contact__content {
-    width: 45%;
+    width: 55%;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .socialmedia__container {
     display: -webkit-box;
@@ -810,6 +920,12 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
     width: 25%;
+  }
+  .maps__button {
+    display: none;
+  }
+  .maps__frame {
+    display: block;
   }
 }
 

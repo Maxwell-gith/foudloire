@@ -47,18 +47,26 @@
             <div class="glide">
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
-                  <li class="glide__slide"><img class="idea__img" src="img/fdl_photo_ballon.jpg" alt="idea" /></li>
-                  <li class="glide__slide"><img class="idea__img" src="img/fdl_photo_tartine.jpg" alt="idea" /></li>
-                  <li class="glide__slide"><img class="idea__img" src="img/fdl_photo_terrasse.jpg" alt="idea" /></li>
-                  <li class="glide__slide"><img class="idea__img" src="img/fdl_photo_vin_vue.jpg" alt="idea" /></li>
+                  <li class="glide__slide"><img class="idea__img" src="img/fdl_photo_ballon.jpg" alt="notre vue sur les mongolfières" /></li>
+                  <li class="glide__slide"><img class="idea__img" src="img/fdl_photo_tartine.jpg" alt="nos tartines" /></li>
+                  <li class="glide__slide"><img class="idea__img" src="img/fdl_photo_terrasse.jpg" alt="notre terrasse" /></li>
+                  <li class="glide__slide"><img class="idea__img" src="img/fdl_photo_vin_vue.jpg" alt="tartine et vin" /></li>
                 </ul>
               </div>
             </div>
           </div>
             
           <figcaption class="idea__content">
-            <h1 class="idea__title">Fou d'Loire</h1>          
-            <h2 class="idea__2title">#Tartines</h2>
+            <h1 class="idea__title">Fou d'Loire</h1>
+            <div class="idea__container_hastags">
+              <ul class="idea__container__list">
+                <li class="idea__container__list__items"><h2 class="idea__2title">#tartines</h2></li>
+                <li class="idea__container__list__items"><h2 class="idea__2title">#bièresartisanales</h2></li>
+                <li class="idea__container__list__items"><h2 class="idea__2title">#vinvaldeloire</h2></li>
+                <li class="idea__container__list__items"><h2 class="idea__2title">#produitslocaux</h2></li>
+              </ul>          
+            </div>
+            
             <p class="idea__text">
               Situé à Chaumont-sur-Loire en bord de Loire avec un cadre convivial et un accueil chaleureux, Fou d'Loire est le lieu parfait pour faire une pause rafraichissante ou gourmande.<br> 
               Ce restaurant est une histoire de famille!<br>
@@ -72,8 +80,8 @@
       <!--=========================== MENU ===========================-->
       <section class="menu">
         <div class="menu__containerTitle">
-          <h2 class="menu__title food__btn menu__title--isActive">Les plats</h2>
-          <h2 class="menu__title drinks__btn">Les boissons</h2>
+          <button class="menu__title food__btn menu__title--isActive">Les plats</button>
+          <button class="menu__title drinks__btn">Les boissons</button>
         </div>
         <div class="menu__containerImg">
           <img class="menu__img food__img" id="menu" src="img/fdl_menu1.jpg" alt="1ere page du menu">
@@ -95,11 +103,19 @@
       <!--=========================== CONTACTS ===========================-->
       <section class="contact" id="contact">
         <figure class="contact__container">
-          <img class="contact__img" src="img/logo.png" alt="contact" />
+          <div class="contact__img">
+            <img src="img/logo.png" alt="contact" />
+          </div>
           <figcaption class="contact__content">
-            <h2 class="contact__title">Nos contacts</h2>
-            <p class="contact__text">22 promenade de Trouillas <br>41150 Chaumont-sur-Loire</p>
             <a class="maps__button" href="https://goo.gl/maps/Cv7nX3jYwRd73n4PA">Ouvrir une carte</a>
+            <iframe class="maps__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824860.570666499!2d-1.175660801125306!3d46.257127653948025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e353ca2731a06d%3A0x2eda8265dd3f996c!2sFou%20d&#39;Loire!5e0!3m2!1sfr!2sfr!4v1656690297649!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="contact__text">
+              22 promenade de Trouillas <br>
+              41150 Chaumont-sur-Loire <br>
+              <a href="tel:+33681160460">06 81 16 04 60</a> <br>
+              <a href="mailto:foudloire@gmail.com">foudloire@gmail.com</a> <br>
+              Ouvert du mardi au dimache de 11h45 à 21h
+            </p>
           </figcaption>
         </figure>
         <div class="socialmedia__container">

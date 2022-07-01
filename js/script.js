@@ -3,6 +3,11 @@ function burgerMenu () {
     const burger = document.querySelector('.navbar__burger');
     burger.addEventListener('click', function () {
         navbar.classList.toggle('show-navbar');
+        if (navbar.classList.contains('show-navbar')) {
+            nonScroll();
+        }else{
+            Scroll()
+        }
     })
 }
 
@@ -13,6 +18,19 @@ function closeBurgerMenu () {
         navBar.classList.remove('show-navbar');
     })
 }
+
+function nonScroll() { 
+    const scrollHaut = window.pageYOffset; 
+    const scrollGauche = window.pageXOffset;
+    window.onscroll = function() { 
+        window.scrollTo(scrollGauche, scrollHaut); 
+    }; 
+}
+
+function Scroll() { 
+    window.onscroll = function() {}; 
+}
+
 
 function foodOrDrinks () {
     const foodBtn = document.querySelector('.food__btn');
@@ -34,4 +52,3 @@ function foodOrDrinks () {
 burgerMenu();
 closeBurgerMenu();
 foodOrDrinks();
-

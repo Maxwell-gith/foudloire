@@ -127,7 +127,7 @@
     }
 
     .navbar__links {
-        width: 65%;
+        width: 80%;
         height: fit-content;
         transition: none;
         top: 0;
@@ -170,7 +170,7 @@
 .idea__title{
     font-weight: bold;
     margin-bottom: 20px;
-    color: $fontColor;
+    color: $colorTitle;
 }
 
 .idea__2title{
@@ -179,6 +179,28 @@
     margin-bottom: 20px;
     color: $tertiaryColor;
     font-family: 'Archivo Narrow', sans-serif;
+}
+
+.idea__container_hastags{
+    overflow: hidden;
+    height: 80px;
+    padding: 0;
+
+}
+
+.idea__container__list{
+    margin-top: 0;
+    text-align: left;
+    list-style: none;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+.idea__container__list__items{
+    line-height:40px;
+    margin:0;
 }
 
     //-------------------IDEA MEDIA QUERIES-------------------
@@ -221,6 +243,9 @@
 .menu__title {
     font-size: 2.5rem;
     color: $secondaryColor;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
 }
 
 .drinks__img--isOpen {
@@ -329,6 +354,7 @@
     width: 50%;
     height: auto;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .contact__title{
@@ -338,7 +364,7 @@
 }
 
 .contact__text{
-    margin-bottom: 20px;
+    margin: 20px 0px 20px 0px;
 }
 
 .maps__button{
@@ -348,9 +374,12 @@
     background-color: $tertiaryColor;
     color: white;
     text-align: center;
-    border: 1px solid $tertiaryColor;
     border-radius: 5px;
     width: 50%;
+}
+
+.maps__frame{
+    display: none;
 }
 
 .contact__smallTitle{
@@ -387,18 +416,28 @@
         }
         .contact__container{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             flex-direction: row-reverse;
             width: 90%;
             margin: 0 auto;
         }
         .contact__img {
-            width: 25%;
-
+            width: 44%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact__img > img {
+            display: block;
+            width: 100%;
         }
         .contact__content {
-            width: 45%;
+            width: 55%;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
         }
 
         .socialmedia__container{
@@ -417,6 +456,14 @@
             display: flex;
             align-items: center;
             width: 25%;
+        }
+
+        .maps__button {
+            display: none;
+        }
+
+        .maps__frame{
+            display: block;
         }
     }
 

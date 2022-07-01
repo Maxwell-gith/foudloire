@@ -173,6 +173,14 @@
     color: $fontColor;
 }
 
+.idea__2title{
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: $tertiaryColor;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
     //-------------------IDEA MEDIA QUERIES-------------------
     @media screen and (min-width: 850px) {
         .idea__container{

@@ -95,12 +95,17 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: Bullina;
+  src: url(../../font/Bullina.otf);
+}
+
 html {
   font-size: 12px;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, button, input, textarea, select {
-  font-family: 'Nunito', sans-serif;
+h2, h3, h4, h5, h6, p, a, button, input, textarea, select {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
   color: #171219;
   line-height: 150%;
@@ -108,6 +113,11 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea, select {
 
 h2 {
   font-size: 2.6rem;
+}
+
+h1 {
+  font-size: 4.6rem;
+  font-family: 'Courgette', cursive;
 }
 
 .glide {
@@ -484,6 +494,14 @@ h2 {
   font-weight: bold;
   margin-bottom: 20px;
   color: #171219;
+}
+
+.idea__2title {
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #419d78;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
 @media screen and (min-width: 850px) {

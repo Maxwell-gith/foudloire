@@ -153,10 +153,12 @@
     animation: fadeIn 1.5s ease-in-out;
 }
 
-.glide__bullet {
-    width: 10px !important;
-    height: 10px !important;
-    margin-bottom: 15px !important;
+.glide__slides {
+    width: 100% !important;
+}
+
+.slide__container {
+    width: 100%;
 }
 
 .idea__img{
@@ -181,19 +183,17 @@
             margin: 0 auto;
         }
 
-        .idea__container > .glide {
-            width: 55% !important;
+        .slide__container {
+            width: 45%;
         }
 
         .idea__img{
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-            object-fit: cover;
+            width: auto;
+            height: 70vh;
         }
 
         .idea__content {
-            width: 35%;
+            width: 49%;
         }
     }
 

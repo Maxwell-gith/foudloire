@@ -3,18 +3,22 @@ function burgerMenu () {
     const burger = document.querySelector('.navbar__burger');
     burger.addEventListener('click', function () {
         navbar.classList.toggle('show-navbar');
-        if (navbar.classList.contains('show-navbar')) {
-            nonScroll();
-        }else{
-            Scroll()
-        }
+        // if (navbar.classList.contains('show-navbar')) {
+        //     nonScroll();
+        // }else{
+        //     Scroll()
+        // }
     })
 }
 
 function closeBurgerMenu () {
     const links = document.querySelector('.navbar__links');
+    const link = document.querySelector('.navbar__link');
     const navBar = document.querySelector('.navbar');
     links.addEventListener('click', function () {
+        navBar.classList.remove('show-navbar');
+    })
+    link.addEventListener('click', function () {
         navBar.classList.remove('show-navbar');
     })
 }

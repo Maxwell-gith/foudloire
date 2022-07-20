@@ -572,6 +572,7 @@ h1 {
   .idea__img {
     -o-object-fit: cover;
        object-fit: cover;
+    width: 100%;
   }
   .idea__content {
     width: 49%;

@@ -566,6 +566,7 @@ h1 {
     width: 49% !important;
   }
   .glide__slide {
+    width: 100% !important;
     height: 70vh !important;
   }
   .idea__img {

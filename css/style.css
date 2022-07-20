@@ -563,10 +563,9 @@ h1 {
     margin: 0 auto;
   }
   .slide__container {
-    width: 45% !important;
+    width: 49% !important;
   }
   .glide__slide {
-    width: 49% !important;
     height: 70vh !important;
   }
   .idea__img {

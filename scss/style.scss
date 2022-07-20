@@ -157,10 +157,6 @@
     animation: fadeIn 1.5s ease-in-out;
 }
 
-.glide__slides {
-    width: 100% !important;
-}
-
 .idea__img{
     width: 100%;
     height: auto;
@@ -207,24 +203,20 @@
     @media screen and (min-width: 850px) {
         .idea__container{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             width: 90%;
             margin: 0 auto;
         }
 
         .slide__container {
-            width: 49% !important;
-        }
-
-        .glide__slide{
-            width: 100% !important;
-            height: 70vh !important;
+            width: 39%;
+            height: 80vh;
+            overflow: hidden;
         }
 
         .idea__img{
             object-fit: cover;
-            width: 100%;
         }
 
         .idea__content {
@@ -483,6 +475,7 @@
 
 .footer__link{
     color: $fontColor;
+    text-decoration: underline;
     cursor: pointer;
     font-size: 1.2rem;
 }

@@ -157,10 +157,6 @@
     width: 100% !important;
 }
 
-.slide__container {
-    width: 100%;
-}
-
 .idea__img{
     width: 100%;
     height: auto;
@@ -214,13 +210,17 @@
         }
 
         .slide__container {
-            width: 45%;
+            width: 45% !important;
         }
 
-        .idea__img{
-            width: auto;
-            height: 70vh;
+        .glide__slide{
+            width: 49%;
         }
+
+        // .idea__img{
+        //     width: auto;
+        //     height: 70vh;
+        // }
 
         .idea__content {
             width: 49%;

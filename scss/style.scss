@@ -217,10 +217,9 @@
             width: 49%;
         }
 
-        // .idea__img{
-        //     width: auto;
-        //     height: 70vh;
-        // }
+        .idea__img{
+            object-fit: cover;
+        }
 
         .idea__content {
             width: 49%;

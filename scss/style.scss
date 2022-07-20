@@ -122,6 +122,10 @@
 
     //-------------------NAVBAR MEDIA QUERIES-------------------
 @media screen and (min-width: 850px) {
+    .navbar{
+        margin-bottom: 40px;
+    }
+
     .navbar__burger {
         display: none;
     }
@@ -214,7 +218,8 @@
         }
 
         .glide__slide{
-            width: 49%;
+            width: 49% !important;
+            height: 70vh !important;
         }
 
         .idea__img{

@@ -7,23 +7,6 @@
   }
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 90%;
-  }
-  75% {
-    font-size: 300%;
-    margin-left: 25%;
-    width: 90%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 90%;
-  }
-}
-
 @keyframes change {
   0%, 12.66%, 100% {transform:translate3d(0,0,0);}
   16.66%, 29.32% {transform:translate3d(0,-25%,0);}

@@ -19,19 +19,6 @@ function closeBurgerMenu () {
     })
 }
 
-function nonScroll() { 
-    const scrollHaut = window.pageYOffset; 
-    const scrollGauche = window.pageXOffset;
-    window.onscroll = function() { 
-        window.scrollTo(scrollGauche, scrollHaut); 
-    }; 
-}
-
-function Scroll() { 
-    window.onscroll = function() {}; 
-}
-
-
 function foodOrDrinks () {
     const foodBtn = document.querySelector('.food__btn');
     const drinksBtn = document.querySelector('.drinks__btn');

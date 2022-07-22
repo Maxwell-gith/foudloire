@@ -699,11 +699,24 @@ h1 {
   text-align: center;
 }
 
+.contact__img__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .contact__img {
-  width: 50%;
+  width: 100%;
   height: auto;
   margin: auto;
-  margin-bottom: 20px;
 }
 
 .contact__title {
@@ -802,7 +815,7 @@ h1 {
     width: 90%;
     margin: 0 auto;
   }
-  .contact__img {
+  .contact__img__container {
     width: 44%;
   }
   .contact__content {

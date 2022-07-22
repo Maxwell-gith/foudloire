@@ -293,7 +293,7 @@
         }
     }
 
-// -----------US-----------------
+// -----------LOCAL-----------------
 .local {
     padding: 80px 20px 80px 20px;
     background-color: #dcc58f;
@@ -315,7 +315,7 @@
     text-align: justify;
 }
 
-    //-------------------US MEDIA QUERIES-------------------
+    //-------------------LOCAL MEDIA QUERIES-------------------
     @media screen and (min-width: 850px) {
         .local__container{
             display: flex;
@@ -351,11 +351,20 @@
     flex-direction: column;
     text-align: center;
 }
+
+.contact__img__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .contact__img{
-    width: 50%;
+    width: 100%;
     height: auto;
     margin: auto;
-    margin-bottom: 20px;
+
 }
 
 .contact__title{
@@ -429,7 +438,7 @@
             width: 90%;
             margin: 0 auto;
         }
-        .contact__img {
+        .contact__img__container {
             width: 44%;
         }
         

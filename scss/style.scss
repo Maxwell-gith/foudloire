@@ -311,6 +311,10 @@
     color: $fontColor;
 }
 
+.us__text{
+    text-align: justify;
+}
+
     //-------------------US MEDIA QUERIES-------------------
     @media screen and (min-width: 850px) {
         .us__container{
